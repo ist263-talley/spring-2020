@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>IST 263 - Week 3, Sample Links</title>
+</head>
+
+<body>
+    <p>This page introduces you to embedding images</p>
+    <h2>External Images</h2>
+    <p>
+        <!-- The 'alt' aka 'alternate' attributes provides a brief textual description of the image -->
+        <img src="http://via.placeholder.com/550x150" alt="Placeholder" />
+    </p>
+    <hr>
+    <h2>Internal Images</h2>
+    <p>
+        <!-- './' => Means from the current folder.  -->
+        <img src="./images/google.jpg" alt="Google Logo">
+    </p>
+    <p>
+        <!-- From the current folder, go into 'labs' folder, and then 'images' and look for 'solar-system.jpg' -->
+        <img src="./labs/images/solar-system.jpg" alt="Google Logo">
+    </p>
+    <p>
+        <!-- The 'width' attribute is optional, and can be used to resize images (scaling down is okay but scaling up can affect the image clarity) -->
+        <img src="./images/google.jpg" alt="Google Logo Small Thumbnail" width="100">
+    </p>
+    <hr>
+    <p>How would you link the thumbnail to the Google Homepage?</p>
+</body>
+
+</html>
