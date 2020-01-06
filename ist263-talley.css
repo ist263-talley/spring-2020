@@ -1,0 +1,28 @@
+  #page-container {max-width:1024px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; color: #3E3D3C; padding: 0.5em;}
+#top-banner {width: 100%; height: 61px; padding: 4px 45px; background-color: #6F777D;}
+#logo-container {display: inline-block; padding: 4px 4px 0 4px; margin-left: 8px; background-color: #fff;}
+  #nav-column {width:18%; float:left; padding: 5px; background-color: #f1f1f1; }
+  #nav-column ul {list-style: none; margin-left: -5px;}
+  #nav-column a:link, #nav-column a:visited {color: #D44500; font-weight: 500; text-decoration: none; border: none; margin-left: 0;}
+  #nav-column a:hover, #nav-column a:active {color: #6F777D; font-weight: 500; text-decoration: underline; border: none; margin-left: 0;}
+  #page-body {width: 78%; float:right; background-color: #f1f1f1; padding: 0.5em;}
+  #header-panel {width: 90%; background-color: #fff; margin: 0 auto; padding: 1em; text-align: center;}
+  #header-panel h1 {font-family: Goudy, Times Roman, serif; font-size: 3em; line-height: 3em; text-align: center; color: #D44500; padding: 0; margin: 0;}
+  #header-panel p {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2em; text-align: center; padding: 0; color:  #6F777D; margin: 0;}
+  footer {width: 100%; clear: both; padding: 2em; text-align: center;}
+  h1 {font-family: Goudy, Times Roman, serif; font-size: 2.5em; line-height: 3em; font-weight: 700; color: #D44500; margin: 0;}
+  h2 {font-family: Goudy, Times Roman, serif; font-size: 2em; line-height: 2.5em; font-weight: 600; color: #D44500; margin: 0;}
+  h3 {font-family: Goudy, Times Roman, serif; font-size: 1.5em; line-height: 2em; font-weight: 600; color: #6F777D; margin: 0;}
+  p {font-size: 1.2em; line-height: 1.5em; font-weight: 500;}
+  strong {font-weight: 700;}
+  table {width: 100%; margin: 0 auto;}
+  tr {padding: 5px;}
+  td {padding: 5px;}
+  th {text-align: left;}
+  a {color: #D44500; text-decoration: none;}
+  a:link, a:visited {color: #D44500; font-weight: 600; text-decoration: none; border-bottom: 1px dashed;}
+  dt {font-weight: 600;}
+  a:hover, a:active {color: #6F777D; text-decoration: none; border-bottom: 1px solid;}
+#top-banner a:link, a:visited {border: none;}
+#top-banner a:hover, a:active {border: none;}
+  code {font-family: "Courier New", Courier, monospace; font-size: 1em;}

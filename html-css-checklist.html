@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IST263 - Intro. to Front-End Web Development - Syracuse University iSchool</title>
+    <link rel="stylesheet" type="text/css" href="/fall2019-m01/ist263-talley.css">
+    <style>
+        dl {
+            margin-left: 1em;
+        }
+        dl.checklist dt {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        dl.checklist dt::before {
+            content: url(images/checkmark.png);
+        }
+        footer p {
+            font-size: small;
+            text-align: left;
+            max-width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TO DO: Add CSS for dl {margin-left:}, dt, lh-->
+<div id="top-banner">
+  <img src="/fall2019-m01/block-s.png" alt="Syracuse University" height="53"/>
+  <div id="logo-container">
+      <a href="http://ischool.syr.edu">
+      <img src="/fall2019-m01/ischool-logo.jpg" alt="Syracuse University School of Information Studies"/>
+      </a>
+  </div>
+</div>
+<div id="page-container">
+<nav id="nav-column">
+<ul>
+  <li><a href="/fall2019-m01/">Course Home</a></li>
+  <li><a href="/fall2019-m01/index.html#schedule">Course Schedule</a></li>
+  <li><a href="/fall2019-m01/syllabus.html">Syllabus</a></li>
+  <li><a href="/fall2019-m01/computer-setup.html">Computer Setup</a></li>
+  <li><a href="/fall2019-m01/individual-project.html">Individual Project</a></li>
+  <li><a href="/fall2019-m01/question-bank.html">Question Bank</a></li>
+</ul>
+</nav>
+<div id="page-body">
+<header id="header-panel">
+<h1>HTML &amp; CSS Checklist</h1>
+</header>
+<main id="page-content">
+<p>In response to input from students about assignment grading comments, I have created this guide for reviewing your HTML and CSS before submitting for grading. I hope it will help to reduce your chances of losing points due to avoidable mistakes or basic quality problems. A checklist can't be comprehensive enough to cover all possible situations, and some judgment will always be involved in evaluation of how well a front-end dev task was completed. We talk all the time in class about "best practice" and "not best practice" and you'll do well to take note of those moments.</p>
+<p>I won't attempt to summarize all possible quality rubrics or coding guidance here, still less to reproduce the excellent resources we use for class readings and references at <a href="http://www.w3schools.com" target="_blank">w3schools</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/" target="_blank">developer.mozilla.org</a>. You should still refer to those tools early and often! I intend this Checklist for two purposes:
+<ul>
+    <li>Give students a helpful reality check when evaluating their work before submitting for grading.</li>
+    <li>Give us all a reference for grading feedback I return your way. Going forward, I'll expect you to have this stuff down, and if I see general HTML or CSS issues in your work, I'll cite 'HTML basics' or 'CSS basics' and focus comments on the key points of the specific assignments I'm reviewing.</li>
+</ul>
+</p>
+<p>In addition to the checklist below, I'll offer a couple general pointers:
+<dl>
+    <dt>Keep the links at those fine resources linked above open while you work.</dt>
+    <dd>Stay focused on pages relevant to the assignment, but be ready to hunt up more basic guidance as you go.</dd>
+    <dt>Always view your work in GitHub Pages.</dt>
+    <dd>This gives you a visual check for obvious broken code problems.</dd>
+    <dd>Refer to our <a href="https://ist263-talley.github.io/fall2019-m01/work-with-github.html" target="_blank">Work with GitHub</a> page if you have any question on how to do this. It's a basic requirement of the class.</dd>
+    <dt>Submit your GitHub Pages URL to the W3C's Markup Validation Service.</dt>
+    <dd>This invaluable tool is free for you use at <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a></dd>
+    <dt>Read assignment instructions <u>carefully</u> and be sure to follow them.</dt>
+    <dd>If you don't understand, consult your study partners (highly encouraged!) and other fellow students.</dd>
+    <dd>Still in doubt? Email questions to me. Those clarification requests need to happen far enough ahead of the submission deadline to get a timely response. Sunday evening emails probably won't be seen until Monday.</dd>
+</dl>
+</p>
+<h2>Onward to the Checklist!</h2>
+<h3>HTML Pointers</h3>
+<dl class="checklist">
+    <dt>Always include these elements in any HTML:</dt>
+        <dd>
+        <code>&lt;!doctype html&gt;<br/>
+        &lt;html&gt;<br/>
+        &lt;head&gt;<br/>
+        &lt;title&gt;Page Title&lt;/title&gt;<br/>
+        &lt;/head&gt;<br/>
+        &lt;body&gt;<br/>
+        &lt;!-- page content goes here --&gt;<br/>
+        &lt;/body&gt;<br />
+        &lt;/html&gt;</code>
+        </dd>
+    <dt>Close your tags!</dt>
+        <dd>This includes standalones like the <code>&lt;link /&gt;</code> tag in the <code>&lt;head/&gt;</code>, <code>&lt;img/&gt;</code> tags that place your images, etc. Omitting these standalone closing / symbols won't break your browser, but it will lower your grade. It's a clear best practice.</dd>
+    <dt>Create a base starter HTML file.</dt>
+        <dd>You can open it and Save-As with a new name to begin each assignment.</dd>
+        <dd>Include the semantic HTML structural tags so you don't forget them: <code>&lt;header/&gt; &lt;main/&gt; &lt;section/&gt; &lt;article/&gt; &lt;footer/&gt;</code></dd>
+        <dd>Know the difference between <code>&lt;head/&gt;</code> and <code>&lt;header/&gt;</code>.</dd>
+    <dt>Use your heading weightings with semantic structure in mind.</dt>
+        <dd>Only <u>one</u> (1) <code>&lt;h1/&gt;</code> per page, and match its keywords to the Page Title.</dd>
+        <dd>Major sections have <code>&lt;h2&gt;</code> headings, e.g., the Education, Work Experience, and Skills section headings in a resume all would be wrapped in <code>&lt;h2&gt;</code> tags.</dd>
+        <dd>Within a major <code>&lt;h2&gt;</code> section, the next most important <u>logically equivalent</u> headings would have <code>&lt;h3/&gt;</code> tags. Then within <code>&lt;h3/&gt;</code> subsections, the sub-subsections would have <code>&lt;h4/&gt;</code> headings, and so on.</dd>
+        <dd><b>Never</b> use heading tags just to style content for visual hierarchy. Visual hierarchy is a good design idea, but it's accomplished in the CSS, not in properly semantic HTML.</dd>
+<dt>Keep parent-child relationships aligned with appropriate elements as components.</dt>
+    <dd>This means, for example, a <code>table/</code> element contains only <code>&lt;tr/&gt; &lt;td/&gt;</code> and other table-specific child elements.</dd>
+    <dd>A <code>ul/</code> element does not wrap paragraphs or headings, only <code>&lt;li&gt;</code> elements would be its direct children. A list item may possibly contain an <code>img/</code> element to place an image in the list if content needs call for it, but be always mindful of appropriate syntax for parent-child relationships.</dd>
+    <dd>When in doubt, consult those linked resources.</dd>
+<dt>Watch your paths &mdash; full HTTP, relative, and full relative paths.</dt>
+    <dd>For a link <code>&lt;a href="path"&gt;</code> and <code>&lt;img src="path"&gt;</code> values, use either full HTTP paths for off-site URLs, or for URLs on the current site use either relative or full <u>relative</u> paths to local URLs.</dd>
+    <dd>Full HTTP path includes the external domain and full path to the resource:<br />
+                <code>href="http://domain.com/folder/subfolder/filename.html"</code></dd>
+    <dd>Relative path starts from the HTML file's current position and gives the path from there. A relative path to an image file in a folder one step down the hierarchy would look like <code>src="images/filename.jpg"</code>. A relative path to a CSS file one step <u>upward</u> in the folder hierarchy would look like <code>href="../style.css"</code></dd>
+    <dd>A <u>full</u> relative path gives the entire path from the root folder to the local resource. If all CSS files were stored together in a single subfolder under the root &mdash; a good practice, because it keeps the path simple and well-known, so you don't waste debugging time on it &mdash; you would see something like <code>href="/css-files/style.css"</code>.</dd>
+    <dt>Markup <u>all content</u> in the file.</dt>
+        <dd>Don't leave any text without proper HTML tagging to express its role in the page.</dd>
+    <dt>Add <code>&lt;!-- comments --&gt;</code> liberally throughout your code.</dt>
+        <dd>Use comments to explain decisions you made & your intentions with your HTML. This gves you a good reminder when you return to the code and it also provides guidance to anyone else who has to maintain your code.</dd>
+        <dd>Plus it helps me understand where you were going with your work, so I can give better feedback.</dd>
+</dl>
+<h3>CSS Pointers</h3>
+<dl class="checklist">
+    <dt>As for hyperlink anchor tags and image tags, watch your CSS file paths.</dt>
+        <dd>Carefully structure your paths to get your <code>&lt;link href="path"/&gt;</code> pointed to the right place.</dd>
+    <dt>An external CSS file includes no HTML markup, such as a <code>&lt;style&gt;</code> tag.</dt>
+        <dd>That file can be linked to apply consistent styling to multiple pages on the same site.</dd>
+    <dt>Internal CSS is contained in a <code>&lt;style/&gt;</code> element within the <code>&lt;head/&gt;</code> element.</dt>
+        <dd>That styling applies <u>only</u> on the current <u>page</u>.</dd>
+        <dd>If you find yourself adding the same internal <code>&lt;style/&gt;</code> tags on multiple pages, move that styling to an external CSS file and link it instead.</dd>
+    <dt>Inline styling is used as minimally as possible to style a single <u>element</u> on a single page.</dt>
+        <dd>e.g.: <code>&lt;p style="font-weight: bold;"&gt;</code></dd>
+        <dd>If you find yourself applying the same inline CSS to multiple, similar elements on a page, add <code>class="some-class"</code> or <code>id="some-id"</code> attributes on those elements and provide internal or external style rules referencing those attribute values.</dd>
+    <dt>Pay close attention when referencing our favorite information tools to the <u>supported values</u> for each CSS property.</dt>
+        <dd>If you use a non-standard value on a CSS property, your CSS will fail.</dd>
+        <dd>VS Code is helpful here when it offers contextual suggestions as you type the CSS property name, so keep an eye on these.</dd>
+</dl>
+</main>
+    <footer class="col-md-12">
+        <p>Did you notice in the <code>&lt;style/&gt;</code> tag's internal CSS how I used the <code>::before</code> pseudoelement to add those checkmark images? Much better than adding an <code>&lt;img/&gt;</code> tag before each description title. You can use right-click > inspect or view page source to peek at the CSS.<br/>
+            <code>
+            dl.checklist dt::before {<br/>
+                content: url(images/checkmark.png);<br/>
+            }
+            </code></p>
+        <p>Copyright by David Talley</p>
+    </footer>
+</div>
+</div>
+</body>
+</html>
