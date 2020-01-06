@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>News Page</title>
+    <link rel="stylesheet" href="./css/solution-style.css">
+    <style>
+        /* 
+        large, md => width > 1200
+        sm => width between 800 - 1200
+        xs => width between 300 - 800
+        */
+
+        .col-25 {
+            float: left;
+            width: 25%;
+        }
+
+        .col-50 {
+            float: left;
+            width: 50%;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+        }
+
+        .col-100 {
+            float: left;
+            width: 100%;
+        }
+
+        /* xs device (iphone x specific) */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+            
+        }
+
+        /* Small devices (portrait tablets and large phones) */
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row"> <!-- start main row -->
+
+            <div class="col-50"> <!-- start left col -->
+
+                <div class="row">
+                    <div class="col-50">
+                        <img class="responsive" src="./images/politics.jpg">
+                    </div>
+                    <div class="col-50">
+                        <img class="responsive" src="./images/travel.jpg">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-50">
+                        <img class="responsive" src="./images/business.jpg">
+                    </div>
+                    <div class="col-50">
+                        <img class="responsive" src="./images/food.jpg">
+                    </div>
+                </div>
+
+            </div> <!-- End left col -->
+
+
+
+            <div class="col-50"> <!-- start right col -->
+                <img class="responsive" src="./images/health.jpg">
+            </div> <!-- End right col -->
+
+
+            
+        </div> <!-- end main row -->
+
+    </div> <!-- end container -->
+
+</body>
+
+</html>

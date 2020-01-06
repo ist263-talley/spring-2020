@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>News Page</title>
+    <link rel="stylesheet" href="./css/solution-style.css">
+    <style>
+        .col-lg-50 {
+            float: left;
+            width: 50%;
+        }
+
+        .col-lg-100 {
+            float: left;
+            width: 100%;
+        }
+
+        .col-lg-25 {
+            float: left;
+            width: 25%;
+        }
+
+        .col-lg-75 {
+            float: left;
+            width: 75%;
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+            .col-xs-100 {
+                width: 100%;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .col-sm-100 {
+                width: 100%;
+            }
+
+            .col-sm-50 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-50 col-sm-100 col-xs-100">
+
+                <div class="row">
+                    <div class="col-lg-50 col-md-50 col-xs-100">
+                        <img class="responsive" src="./images/politics.jpg">
+                    </div>
+                    <div class="col-lg-50 col-md-50 col-xs-100">
+                        <img class="responsive" src="./images/travel.jpg">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-50 col-md-50 col-xs-100">
+                        <img class="responsive" src="./images/business.jpg">
+                    </div>
+                    <div class="col-lg-50 col-md-50 col-xs-100">
+                        <img class="responsive" src="./images/food.jpg">
+                    </div>
+                </div>
+            </div> <!-- End col -->
+
+            <div class="col-lg-50 col-md-50 col-xs-100">
+                <img class="responsive" src="./images/health.jpg">
+            </div> <!-- End col -->
+
+        </div> <!-- end row -->
+        &nbsp;
+    </div> <!-- end container -->
+</body>
+
+</html>

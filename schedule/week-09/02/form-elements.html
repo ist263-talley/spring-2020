@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IST 263 - HTML Forms</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <style>
+        div.item-container {
+            margin-bottom: 40px;
+        }
+        
+        div.item-container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        div.item {
+            padding: 10px 20px;
+            background: #f9f9f9;
+            margin-bottom: 10px;
+        }
+        
+        pre {
+            max-height: 700px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row text-center header">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>HTML Forms & Elements</h2>
+                        <p>Allows us to submit information to the server</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item-container">
+                    <div class="col-md-5 col-sm-12">
+                        <h4>Basic Form Structure</h4>
+                        <div class="item">
+                            <p><q>method</q>: Tells the browser <strong>HOW</strong> to send the information.</p>
+                            <p><q>action</q>: Tells the browser <strong>WHERE</strong> to send the information.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <pre>&lt;form method="GET" action="/login.html"&gt;<br />&nbsp;&nbsp;&nbsp;&lt;!-- form elements go inside here --&gt;<br>&lt;/form&gt;
+                    </pre>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="item-container">
+                    <div class="col-md-5 col-sm-12">
+                        <h4>Example Login Form</h4>
+                        <div class="item">
+                            <form method="GET" action="./login.html">
+                                <p>
+                                    <label>Email:</label><br>
+                                    <input type="text" name="useremail" value="" />
+                                </p>
+                                <p>
+                                    <label>Password:</label><br>
+                                    <input type="password" name="login-pwd" value="" />
+                                </p>
+                                <p>
+                                    <input type="submit" name="login" value="Login &raquo;" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <pre>&lt;form method="GET" action="login.html"&gt;
+    &lt;p&gt;
+        &lt;label&gt;Email:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" name="useremail" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;Password:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="password" name="login-pwd" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type="submit" name="login" value="Login &amp;raquo;" /&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</pre>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="item-container">
+                    <div class="col-md-5 col-sm-12">
+                        <h4>Form Elements</h4>
+                        <div class="item">
+                            <form method="GET" action="no-one.html">
+                                <p>
+                                    <label>This is a <q>textbox</q> and accepts any text</label><br>
+                                    <input type="text" name="regbox" value="" />
+                                </p>
+                                <p>
+                                    <label>This is also a <q>textbox</q> that accepts any text but text is <em>masked</em> </label><br>
+                                    <input type="password" name="pwd" value="" />
+                                </p>
+                                <p>
+                                    <label>This is also a <q>textarea</q></label><br>
+                                    <textarea rows="5" cols="50" name="comment"></textarea>
+                                </p>
+                                <p>
+                                    <label>This is a <q>checkbox</q></label><br>
+                                    <label><input type="checkbox" name="checkbox[]" value="box1">&nbsp;Box 1</label><br>
+                                    <label><input type="checkbox" name="checkbox[]" value="box2">&nbsp;Box 2</label><br>
+                                    <input type="checkbox" name="checkbox[]" value="box3">&nbsp;<label>Box 3</label><br>
+                                </p>
+                                <p>
+                                    <label>This is a <q>radio button</q></label><br>
+                                    <label><input type="radio" name="radiob" value="radio1">&nbsp;Radio 1</label><br>
+                                    <label><input type="radio" name="radiob" value="radio2">&nbsp;Radio 2</label><br>
+                                    <input type="radio" name="radiob" value="radio3">&nbsp;<label>Radio 3</label><br>
+                                </p>
+
+                                <p>
+                                    <label>This is a <q>select</q> element</label><br>
+                                    <select name="status">
+                                        <option value="-1">Select from the list</option>
+                                        <option value="1">I am paying attention</option>
+                                        <option value="2">Can we leave now?</option>                                        
+                                    </select>
+                                </p>
+                                <p>
+                                    <input type="file" name="upFile" />
+                                </p>
+                                <p>
+                                    <label>This is a <q>submit</q> button</label><br>
+                                    <input type="submit" name="login" value="Login &raquo;" />
+                                </p>
+                                <p>
+                                    <label>This is a <q>reset</q> button</label><br>
+                                    <input type="reset" name="reset-form" value="Clear Form &raquo;" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <pre>&lt;form method="GET" action="no-one.html"&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;textbox&lt;/q&gt; and accepts any text&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" name="regbox" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This text is &lt;em&gt;masked&lt;/em&gt; &lt;/label&gt;&lt;br&gt;
+        &lt;input type="password" name="pwd" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is also a &lt;q&gt;textarea&lt;/q&gt;&lt;/label&gt;&lt;br&gt;
+        &lt;textarea rows="5" cols="50" name="comment"&gt;&lt;/textarea&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;checkbox&lt;/q&gt;&lt;/label&gt;&lt;br&gt;
+        &lt;label&gt;&lt;input type="checkbox" name="checkbox[]" value="box1"&gt;&amp;nbsp;Box 1&lt;/label&gt;&lt;br&gt;
+        &lt;label&gt;&lt;input type="checkbox" name="checkbox[]" value="box2"&gt;&amp;nbsp;Box 2&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" name="checkbox[]" value="box3"&gt;&amp;nbsp;&lt;label&gt;Box 3&lt;/label&gt;&lt;br&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;radio button&lt;/q&gt;&lt;/label&gt;&lt;br&gt;
+        &lt;label&gt;&lt;input type="radio" name="radiob" value="radio1"&gt;&amp;nbsp;Radio 1&lt;/label&gt;&lt;br&gt;
+        &lt;label&gt;&lt;input type="radio" name="radiob" value="radio2"&gt;&amp;nbsp;Radio 2&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" name="radiob" value="radio3"&gt;&amp;nbsp;&lt;label&gt;Radio 3&lt;/label&gt;&lt;br&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;select&lt;/q&gt; element&lt;/label&gt;&lt;br&gt;
+        &lt;select name="status"&gt;
+            &lt;option value="-1"&gt;Select from the list&lt;/option&gt;
+            &lt;option value="1"&gt;I am paying attention&lt;/option&gt;
+            &lt;option value="2"&gt;Can we leave now?&lt;/option&gt;                                        
+        &lt;/select&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type="file" name="upFile" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;submit&lt;/q&gt; button&lt;/label&gt;&lt;br&gt;
+        &lt;input type="submit" name="login" value="Login &amp;raquo;" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;This is a &lt;q&gt;reset&lt;/q&gt; button&lt;/label&gt;&lt;br&gt;
+        &lt;input type="reset" name="reset-form" value="Clear Form &amp;raquo;" /&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</pre>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="item-container">
+                    <div class="col-md-5 col-sm-12">
+                        <h4>HTML 5 Form Elements</h4>
+                        <div class="item">
+                            <form method="GET" action="login.html">
+                                <p>
+                                    <label>Number:</label><br>
+                                    <input type="number" name="quantity" value="" />
+                                </p>
+                                <p>
+                                    <label>DoB:</label><br>
+                                    <input type="date" name="dob" value="" />
+                                </p>
+                                <p>
+                                    <label>Expires On:</label><br>
+                                    <input type="month" name="expires" value="" />
+                                </p>
+                                <p>
+                                    <label>Telephone No:</label><br>
+                                    <input type="tel" name="expires" value="" />
+                                </p>
+                                <p>
+                                    <label>Email</label><br>
+                                    <input type="email" name="email" value="" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <pre>&lt;form method="GET" action="login.html"&gt;
+    &lt;p&gt;
+        &lt;label&gt;Number:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="number" name="quantity" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;DoB:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="date" name="dob" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;Expires On:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="month" name="expires" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;Telephone No:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="tel" name="expires" value="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;Email&lt;/label&gt;&lt;br&gt;
+        &lt;input type="email" name="email" value="" /&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</pre>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end row -->
+        </div>
+    </main>
+</body>
+
+</html>

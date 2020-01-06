@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    
+}
+
+
+img.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+}
+
+header {
+    background: #333;
+    color: #fff;
+}
+
+div.header {
+    padding: 5px;
+}
+
+div.header p {
+    margin: 0;
+}
+
+div.header h1 {
+    margin: 5px 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        justify-content: space-between;
+    }
+    .col-100 {
+        flex: none;
+        width: 100%;
+    }
+} 

@@ -1,0 +1,87 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.side-nav {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.side-nav li {
+    margin: 5px;
+    padding: 5px;
+}
+nav {
+    background-color: #f1f2f3;
+    padding: 1px 0;
+    border-radius: 5px;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 5px;
+}
+nav ul li a {
+    padding-right: 5px;
+}
+
+nav ul li:after {
+    content: " / ";
+}
+
+nav ul li:last-child:after {
+    content: "";
+}
+
+section {
+    margin: 0 20px 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+section p {
+    margin: 0 20px;
+}
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}

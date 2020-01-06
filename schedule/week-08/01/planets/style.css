@@ -1,0 +1,12 @@
+body {
+    background-color: red;   
+}
+
+/* 
+  Quick Lookup Guide
+- Change font color     => color: red;
+- Change font size      => font-size: 15px;
+- Text align            => text-align: center
+- Background color      => background-color: blue
+- Select table header row as table>thead>tr { your properties go here }
+*/
