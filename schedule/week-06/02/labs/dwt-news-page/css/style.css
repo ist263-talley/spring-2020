@@ -1,0 +1,48 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 1596px;
+}
+div.page-content {
+    width: 1184px;
+    margin: 0 auto;
+}
+.site-header {
+    width: 100%;
+    height: 74px;
+    background-color: #333;
+    margin-bottom: .5em;
+}
+.row {
+    display: flex;
+}
+aside {
+    flex: 1;
+}
+main {
+    flex: 1;
+}
+article {
+    flex: 1;
+    margin: 0 .75em .75em 0;
+    padding: .5em;
+    border: 1px solid #666;
+}
+img {
+    width: 100%;
+}
+img.site-logo {
+    height: 74px;
+    width: 234px;
+    padding-left: 13%;
+}/*
+main img {
+    width: 100%;
+}*/
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}

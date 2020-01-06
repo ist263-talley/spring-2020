@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Grids</title>
+    <style>
+        pre {
+            background: #e1e2e3;
+            padding: 5px;
+        }
+        div {
+            color: white;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        div.red {
+            background-color: red;
+        }
+
+        div.blue {
+            background-color: blue;
+        }
+
+        div.col-size-1 {
+            flex: 1 500px;
+        }
+
+        div.box-2 {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Without flex</h3>
+    <p>These 2 divs are displayed as 'block' elements.</p>
+    <div class="red">Box 01</div>
+    <div class="blue">Box 02</div>
+    <hr>
+    <h3>With display set as 'flex' i.e. display: flex;</h3>
+    <div style="background: #fefefe; padding: 10px; color: #333;">
+        <h4>Step 1</h4>
+        <p>Set the 'display' property of the parent/row to 'flex'</p>
+        <pre>
+&lt;div style=&quot;display: flex;&quot;&gt;
+    &lt;div class=&quot;red&quot;&gt;Box 01&lt;/div&gt;
+    &lt;div class=&quot;blue&quot;&gt;Box 02&lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+    <div style="display: flex;">
+        <div class="red">Box 01</div>
+        <div class="blue">Box 02</div>
+    </div>
+    <hr>
+    <h3>Let's set width of 'children' elements</h3>
+    <pre>
+&lt;div style=&quot;display: flex;&quot;&gt;
+    &lt;div class=&quot;red&quot; style=&quot;flex: 1&quot;&gt;Box 01&lt;/div&gt;
+    &lt;div class=&quot;blue&quot; style=&quot;flex: 1&quot;&gt;Box 02&lt;/div&gt;
+&lt;/div&gt;</pre>
+    <p>The 'children' divs have their 'flex' set to 1</p>
+    <div style="display: flex;">
+        <div class="red" style="flex: 1">Box 01</div>
+        <div class="blue" style="flex: 1">Box 02</div>
+    </div>
+    <br><br><br><br><br>
+    <h3>Now we can do the same with classes</h3>
+    <pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;red col-size-1&quot; &gt;Box 01&lt;/div&gt;
+    &lt;div class=&quot;blue col-size-1&quot; &gt;Box 02&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <div class="row">
+            <div class="red col-size-1" >Box 01</div>
+            <div class="blue col-size-1" >Box 02</div>            
+    </div>
+    <hr>
+    <pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;red col-size-1&quot; &gt;Box 01&lt;/div&gt;
+    &lt;div class=&quot;blue box-2&quot; &gt;Box 02&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <div class="row">
+            <div class="red col-size-1" >Box 01</div>
+            <div class="blue box-2" >Box 02</div>
+    </div>
+</body>
+
+</html>

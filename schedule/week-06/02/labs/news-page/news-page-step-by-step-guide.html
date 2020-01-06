@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Page</title>
+
+    <link rel="stylesheet" href="./guide/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <aside class="col">
+                <ul>
+                    <li>
+                        <h4>Step 1</h4>
+                    </li>
+                    <li>
+                        <h4>Step 2</h4>
+                    </li>
+                    <li>
+                        <h4>Step 3</h4>
+                    </li>
+                    <li>
+                        <h4>Step 4</h4>
+                    </li>
+                    <li>
+                        <h4>Step 5</h4>
+                    </li>
+                </ul>
+            </aside>
+            <main class="col">
+                <section>
+                    <header>
+                        <h2>Step 1:</h2>
+                        <p>Create a new html page titled 'news.html', and your stylesheet 'style.css'. You will need to
+                            use
+                            'Source Sans Pro' font from Google.</p>
+                    </header>
+                </section>
+
+
+                <section>
+                    <header>
+                        <h2>Step 2:</h2>
+                        <ul>
+                            <li>Start with the page header i.e. Grafreez News and the tagline. Choose appropriate tags.
+                            </li>
+                            <li>Add some css to set the header background color to #333333</li>
+                        </ul>
+                        <p>Your page should look like this now</p>
+                        <img src="./guide/step-2.png" alt="After step 2">
+                    </header>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Step 3:</h2>
+                        <ul>
+                            <li>We will create the outer most blocks to include the main content</li>
+                            <li>Add a 'row' div and set its 'display: flex' i.e. we are creating the 'flex container'
+                            </li>
+                            <li>Add 2 'col' inside the container that are equal spaced i.e. their 'flex' property set to
+                                1
+                            </li>
+                            <li>Set the background colors for the boxes to red and blue so you see how they look</li>
+                        </ul>
+                        <p>Your page should look like this now</p>
+                        <img src="./guide/step-3-1.png" alt="After step 3-1">
+
+                        <p>If it does not look like this, you didn't setup the 'flex' correctly. Review files from last
+                            class, ask your neighbor or Avi</p>
+                        <ul>
+                            <li>Take out the blue background color to the right 'col' and include the 'health' image
+                                which
+                                in the images folder using 'img' tag. </li>
+                            <li>The image sizes are off, add the following CSS so the images become responsive
+                                <pre>
+img {
+    width: 100%;
+    height: auto;
+}
+                                </pre>
+                            </li>
+                        </ul>
+
+                        <p>Your page should look like this now</p>
+                        <img src="./guide/step-3-2.png" alt="After step 3-2">
+                        Your CSS file should look something like this
+                        <pre>
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+img.responsive {
+    width: 100%;
+    height: auto;
+}
+                        </pre>
+                    </header>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Step 4:</h2>
+                        <p>Let's work on the 2x2 image grid that will go in the 'col' that is 'red' background</p>
+                    </header>
+
+                    <ul>
+                        <li>Steps to get 2x2 grid is very similar to what we did in Step 3. Can you try before reading
+                            below? </li>
+                        <li>Create a 'row' div and add 2 'col' divs inside it. Set their background colors so you can
+                            see
+                            how they look</li>
+                    </ul>
+
+                    <p>Your page should look like this now</p>
+                    <img src="./guide/step-4-1.png" alt="After step 4-1">
+                    <ul>
+                        <li>Add the images to the newly created 'col' boxes. Add the caption and time stamp as well.
+                        </li>
+                    </ul>
+
+                    <p>Your page should look like this now</p>
+                    <img src="./guide/step-4-2.png" alt="After step 4-2">
+
+                    <ul>
+                        <li>Repeat the previous step to create a new 2x2 grid and add the remaining 2 news items</li>
+
+                    </ul>
+
+                    <p>Your page should look like this now</p>
+                    <img src="./guide/step-4-3.png" alt="After step 4-3">
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Step 5:</h2>
+                    </header>
+                    <ul>
+                        <li>You are almost done...look closely at the news-template.png. There is some border and space
+                            between the new items.</li>
+                        <li>The border color can be #cccccc. I'll let you figure this part out.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>IST 263 - Borders</title>
+
+    <!-- This is loading an external CSS file -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- You can in a similar fashion include fonts from other sources -->
+    <style>
+        /* Type selector */        
+        h1 {
+            font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+            color: orange;
+            padding: 50px;
+            /*
+            padding-top: 50px;
+            padding-right: 50px;
+            
+            padding-bottom: 50px;    
+            padding-left: 50px;
+            */
+            
+            /* or you also write it as */
+            padding: 50px 50px 50px 50px;
+        }
+        
+        p {            
+            padding: 10px;
+            margin: 15px;
+
+            border-top-width: 20px;
+            border-top-style: ridge;
+            border-top-color: red;
+            /* Other possible values dotted, dashed, double, groove, ridge, etc */
+            border-left-width: 2px;
+            border-left-style: solid;
+            border-left-color: red;
+            /* Style bottom */
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+            /* Style right */
+            border-right-width: 2px;
+            border-right-style: solid;
+            border-right-color: red;
+            /* That was the longhand, a more common way to write the above properties is as follows
+            */
+            /* CSS Shorthand */
+            border: 2px solid red;
+            /*What if wanted to have a different border on one side 
+            border-left-width: 5px;
+            border-left-color: green;
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Borders - A good example for CSS shorthand</h1>
+    <nav>
+            <ul>
+                <li><a href="index.html">Week 04.02 Home</a></li>
+                <li>Borders</li>
+            </ul>
+        </nav>
+    <P>
+        Lorem ipsum dolor sit amet, vestibulum pretium ullamcorper dolor suspendisse sed. Diam in amet sed fermentum, pharetra libero id, fusce metus voluptas est lacus, in risus nulla ante vulputate et accumsan. <strong>Duis hendrerit ultrices pulvinar nec, pulvinar</strong>        pariatur nonummy vestibulum ut, tincidunt id elit cubilia fringilla velit. In tellus volutpat quisque. <br><br>Aliquam morbi ut tempus neque, et quisque metus auctor dignissim, elit augue pulvinar quam suscipit integer dui, id taciti feugiat amet
+        ipsum nec tortor, lorem nibh porttitor dictum feugiat quam hac. Quis egestas euismod <span>enim mattis volutpat dui</span>, feugiat duis felis sit eget eu, in gravida lorem vitae. Auctor eu urna semper enim porttitor. Ultrices vitae metus, enim
+        lorem integer, turpis nulla volutpat nulla.
+    </p>
+</body>
+
+</html>

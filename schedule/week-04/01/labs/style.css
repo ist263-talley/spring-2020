@@ -1,0 +1,29 @@
+body {
+    background-color: #ccc;   
+}
+h4 {
+    color: blue;
+    font-size: 16px;
+}
+h4.orange {
+    color: orange;
+    text-align: center;
+}
+thead {
+    background-color: #eaeaea;
+    color: #333;
+}
+tbody {
+    background-color: #f2f2f2;
+    color: #666;
+}
+
+
+/* 
+  Quick Lookup Guide
+- Change font color     => color: red;
+- Change font size      => font-size: 15px;
+- Text align            => text-align: center
+- Background color      => background-color: blue
+- Select table header row as table>thead>tr { your properties go here }
+*/
