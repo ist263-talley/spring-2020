@@ -1,0 +1,67 @@
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.page-container {
+    padding: 0 16px;
+}
+header.jumbotron {
+    background-color: #ccc;
+    margin: 1em;
+    padding: 2em 1em;
+    background-image: url(images/silhouette.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 5em;
+}
+header.first-job {
+    width: 100%;
+    background-image: url(images/company-name-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+header.second-job {
+    width: 100%;
+    background-image: url(images/company-name-2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+h1 { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color:orangered;
+}
+h2 { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: #666;
+}
+h2.job-title {
+    font-size: .8em;
+}
+h3 {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: blue;
+}
+h4 {
+    font-size: .8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #666;
+}
+.top {
+    margin: 0 1em;
+}
+.container {
+    margin: 0 1em;
+}
+article {
+    border-bottom: 1px solid #666;
+}
